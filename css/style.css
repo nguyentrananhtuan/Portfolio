@@ -1,0 +1,11 @@
+.container{
+    max-width: 940px;
+    margin:0 auto;
+}
+.banner{
+    max-width: 1600px;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
