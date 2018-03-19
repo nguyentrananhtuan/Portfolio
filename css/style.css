@@ -10,8 +10,9 @@ body{
     max-width: 1600px;
 }    
 .container{
-    max-width: 950px;
-    margin:0 auto;
+    max-width: 940px;
+    padding:0;
+
 }
 .column{
     float: left;
@@ -35,7 +36,7 @@ nav{
 .banner-title{
     padding-left: 170px;
     position: absolute;
-    margin-top: -370px;
+    margin-top: -330px;
 }
 .banner-title p{
     color:#ffffff;
@@ -46,6 +47,7 @@ nav{
     max-width: 140px;
     width:140px;
     height: 100px;
+    padding-left: 27px;
     padding-right: 320px;
     padding-top: 12px; 
     padding-bottom: 33px; 
@@ -74,7 +76,7 @@ nav{
     font-size:18px;
     color:#fff;
     text-decoration: none;
-    padding-right: 15px;
+    padding-right: 20px;
     font-size: 14pt;
     
 }
@@ -82,32 +84,44 @@ nav{
     text-decoration: underline;
     text-decoration-color: #5da78a;
     color:#5da78a ;
-    
+    line-height: 1.5px;
 }
 .custom-link{
-    width:180px;
+    width:293px;
+    height: 100px;
     padding-top: 40px;
     padding-bottom: 30px;
-   
+  
 
 } 
 .custom-link ul li{
     list-style-type: none;
     display: inline;
-    padding-right: 14px;
+    padding-left: 14px;
 }
 .custom-link a{
     text-decoration: none;
     color:#ffff;
-    border-radius: 50%;
-    border: 1px solid white;
+    
+    
 }
 .custom-link i{
-    width: 40px;
-    height: 40px;
+    width: 26px;
+    height: 26px;
+    font-size: 30px;
     border-radius: 50%;
-    border: 1px solid white;
     color:#fff;
+    position: relative;
+    top: -1px;
+    overflow: hidden;
+
+}
+.fa-linkedin:before,
+.fa-facebook-square:before,
+.fa-twitter-square:before,
+.fa-flickr:before {
+    position: relative;
+    top: -2px;
 }
 .portfolio{
     width: 100%;
@@ -119,13 +133,77 @@ nav{
 .portfo-title{
     height: 180px;
     padding-top: 60px;
+    margin-bottom: 20px;
    
 }
 .portfo-title h2{
     font-size: 48px;
     text-align: center;
+    margin-bottom: -8px;
 }
 .portfo-title p{
     font-size: 24px;
     text-align: center;
+}
+.portfolio-image{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.portfolio-image img{
+    width: 100%;
+    /* padding:0px; */
+    float: left;
+    position: relative;
+}
+.image{
+    padding:0px;
+
+}
+.portfolio-image img:hover{
+    color:#669985;
+    opacity: 0.6;
+}
+.image-hover{
+    opacity: 0;
+    position:absolute;
+}
+
+.testimonial{
+    background-image: url("../images/testmi.jpg");
+    width: 100%;
+    height: 300px;
+}
+.testimonial-cap{
+    color:#ffffff;
+    font-size: 36px;
+    padding-top: 20px;
+}
+.fa-quote-left:before {
+
+    position: relative;
+    top: 23px;
+    left: -15px;
+}
+.fa-quote-right:before {
+ 
+    position: relative;
+    top: -25px;
+}
+.testimonial-cap p{
+       padding-left: 30px;
+       margin: 0;
+}
+.new{
+    width: 100%;
+    height: 680px;
+    background:#cdcdcd;
+}
+.sponsor{
+    width: 100%;
+    height: 200px;
+    background: #bebebe;
+}
+.sponsor img{
+    width: 100%;
+    position: relative;
 }
