@@ -8,7 +8,10 @@ body{
     font-family: 'Oswald', sans-serif;
     padding: 0 auto;
     max-width: 1600px;
-}    
+}  
+.font-OpenSan{
+    font-family: 'Open Sans', sans-serif;
+}  
 .container{
     max-width: 940px;
     padding:0;
@@ -112,7 +115,6 @@ nav{
     border-radius: 50%;
     color:#fff;
     position: relative;
-    top: -1px;
     overflow: hidden;
 
 }
@@ -121,7 +123,7 @@ nav{
 .fa-twitter-square:before,
 .fa-flickr:before {
     position: relative;
-    top: -2px;
+    top: -1px;
 }
 .portfolio{
     width: 100%;
@@ -153,20 +155,78 @@ nav{
     width: 100%;
     /* padding:0px; */
     float: left;
-    position: relative;
+    
 }
 .image{
     padding:0px;
-
+    position: relative;
 }
-.portfolio-image img:hover{
-    color:#669985;
+.image:hover .image-hover{
     opacity: 0.6;
 }
 .image-hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
-    position:absolute;
+    transition: .3s ease;
+    background-color: #669985;
 }
+.image-hover ul {
+    text-align: center;
+    position: absolute;                  
+    bottom: 10px;     
+    width: 100%;
+}
+.image-hover ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 10px;
+}
+/* .image-hover ul li a{
+    color:#eee;
+} */
+.icon {
+    color: white;
+    /* font-size: 100px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.icon-bot{
+    color: #eee;
+  }
+/* .icon-bot2{
+    color: #eee;
+    font-size: 100px;
+    position: absolute;
+    bottom: 20px;
+    left:41%;
+    text-align: center;
+  }
+.icon-bot3{
+    color: #eee;
+    font-size: 100px;
+    position: absolute;
+    bottom: 20px;
+    left:59%;
+    text-align: center;
+  }
+.icon-bot4{
+    color: #eee;
+    font-size: 100px;
+    position: absolute;
+    bottom: 20px;
+    left:77%;
+    text-align: center;
+  } */
 
 .testimonial{
     background-image: url("../images/testmi.jpg");
@@ -193,10 +253,21 @@ nav{
        padding-left: 30px;
        margin: 0;
 }
-.new{
+.news{
     width: 100%;
     height: 680px;
     background:#cdcdcd;
+    color:#252222;
+}
+.tags a{
+    color:white;
+    background:#59a386;
+    padding: 0px 12px;
+    margin: 0px 1px;
+    text-decoration: none
+}
+.tags a:hover{
+    background: #e2534b;
 }
 .sponsor{
     width: 100%;
@@ -205,5 +276,25 @@ nav{
 }
 .sponsor img{
     width: 100%;
-    position: relative;
+   
+}
+.bio{
+    width: 100%;
+    height: 600px;
+    background: #e2534b;
+    color:#ffffff;
+}
+.bio h2{
+    font-size: 48px;
+    color: #252222;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px 0px 50px 0px;
+}
+.bio p{
+    font-size: 14px;
+}
+.bio img{
+    border-radius: 50%;
+
 }
