@@ -6,8 +6,9 @@
 
 body{
     font-family: 'Oswald', sans-serif;
-    padding: 0 auto;
+    margin: 0 auto;
     max-width: 1600px;
+    max-height: 4750px;
 }  
 .font-OpenSan{
     font-family: 'Open Sans', sans-serif;
@@ -15,6 +16,7 @@ body{
 .container{
     max-width: 940px;
     padding:0;
+    margin: 0 auto;
 
 }
 .column{
@@ -25,10 +27,12 @@ body{
 }
 .banner {
     max-width: 1600px;
+    height: 500px;
     position: relative;
 }
 .banner img{
     width: 100%;
+    height: 100%;
 }
 nav{
     width: 100%;
@@ -47,13 +51,14 @@ nav{
     line-height: 66%;
 }
 .folio{
-    max-width: 140px;
+    max-width: 0px;
     width:140px;
     height: 100px;
     padding-left: 27px;
     padding-right: 320px;
     padding-top: 12px; 
     padding-bottom: 33px; 
+   
 }
 .folio a{
     font-size:48px; 
@@ -64,6 +69,7 @@ nav{
 .menu{
     width:300px;
     height: 100px;
+  
     padding-top: 40px;
     padding-bottom: 40px;
     
@@ -92,6 +98,8 @@ nav{
 .custom-link{
     width:293px;
     height: 100px;
+    /* width: 31%;
+    height: 100%; */
     padding-top: 40px;
     padding-bottom: 30px;
   
@@ -128,6 +136,7 @@ nav{
 .portfolio{
     width: 100%;
     height: 1850px;
+    /* height: 39%; */
     background: #65ba99;
     color: #ffffff;
     
@@ -157,6 +166,9 @@ nav{
     float: left;
     
 }
+/* img{
+    width: 100%;
+} */
 .image{
     padding:0px;
     position: relative;
@@ -232,6 +244,7 @@ nav{
     background-image: url("../images/testmi.jpg");
     width: 100%;
     height: 300px;
+    /* height: 6.3%; */
 }
 .testimonial-cap{
     color:#ffffff;
@@ -255,10 +268,31 @@ nav{
 }
 .news{
     width: 100%;
-    height: 680px;
+    height: 700px;
+    /* height: 14.7%; */
     background:#cdcdcd;
     color:#252222;
 }
+.news .row{
+    margin: 0 auto;
+}
+.news .row .col-sm-6{
+    padding: 0px;
+}
+.col-sm-2{
+    padding:0px;
+}
+/* .news-l{
+    width: 465px;
+    height: 430px;
+    padding: 0;
+
+}
+.news-r{
+    width: 400px;
+    height: 430px;
+    padding: 0;
+} */
 .tags a{
     color:white;
     background:#59a386;
@@ -272,6 +306,7 @@ nav{
 .sponsor{
     width: 100%;
     height: 200px;
+    /* height: 4%; */
     background: #bebebe;
 }
 .sponsor img{
@@ -281,6 +316,7 @@ nav{
 .bio{
     width: 100%;
     height: 600px;
+    /* height: 12.5%; */
     background: #e2534b;
     color:#ffffff;
 }
@@ -296,5 +332,19 @@ nav{
 }
 .bio img{
     border-radius: 50%;
+}
+.contact{
+    width: 100%;
+    height: 530px;
+    /* height: 11%; */
+    background-image: url("../images/contact.jpg")
+} 
+.contact h2, .contact p{
+    text-align: center;
 
+}
+.mid-contact{
+    height: 330px;
+    width: 700px;
+    margin: 0 auto;
 }
